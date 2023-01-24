@@ -112,6 +112,7 @@ function InterpretMessage(message, prefix) {
 	if (!msg.startsWith(prefix) || message.author.bot) {return;}
 
 	console.log(`[${message.author.username}]: ${message.content}`);
+	console.log('test');
 
 	const args = msg.slice(prefix.length).split(/ +/);
 	const commandName = args.shift().toLowerCase();
